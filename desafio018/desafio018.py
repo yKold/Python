@@ -1,5 +1,9 @@
 import math
+
 n = float(input('Qual o ângulo? '))
-sen = math.sin(n)
-cos = math.cos(n)
-print('O seno e cosseno do seu ângulo são respectivamente {} e {} .'.format(sen, cos))
+
+sen = math.sin(math.radians(n))
+cos = math.cos(math.radians(n))
+tan = math.tan(math.radians(n))
+
+print('O seno, cosseno e tangente do seu ângulo são respectivamente {:.2f} , {:.2f} e {:.2f}.'.format(sen, cos, tan))
