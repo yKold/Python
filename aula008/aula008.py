@@ -1,6 +1,6 @@
 from math import sqrt, floor, ceil 
 import random
-from emoji import emojize
+import emoji
 
 n = int(input("Me diga um número: "))
 rz = int(sqrt(n))
@@ -13,5 +13,4 @@ print('A raiz quadrada de {} é igual a {} .'.format(n, rz))
 num = random.randint(1, 20)
 print(num)
 
-moji = emoji
-print
+print(emoji.emojize('Hoje o dia está :rosto_fervendo_de_calor:', language='pt'))
