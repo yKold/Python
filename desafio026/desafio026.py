@@ -1,0 +1,5 @@
+f = input('Digite uma frase: ')
+f = f.upper().strip()
+print('A letra "A" apareceu {} vezes'.format(f.count('A')))
+print('A letra "A" aparece pela primeira vez na casa {}'.format(f.find('A') + 1))
+print('A letra "A" aparece pela última vez na casa {}'.format(f.rfind('A') + 1))
