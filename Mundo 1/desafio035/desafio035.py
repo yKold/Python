@@ -1,6 +1,6 @@
-r1 = int(input('Qual o valor da primeira reta?'))
-r2 = int(input('Qual o valor da segunda reta?'))
-r3 = int(input('Qual o valor da terceira reta?'))
+r1 = float(input('Qual o valor da primeira reta?'))
+r2 = float(input('Qual o valor da segunda reta?'))
+r3 = float(input('Qual o valor da terceira reta?'))
 n = 0
 
 if (r1 + r2) > r3:
