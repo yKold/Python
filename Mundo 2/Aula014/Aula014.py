@@ -18,6 +18,6 @@ while n != 0:
         if n % 2 == 0:
             par += 1
         else:
-        impar += 1
+            impar += 1
 print('Você digitou {} pares e {} impares'.format(par, impar))
 print('Fim')
