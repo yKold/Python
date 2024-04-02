@@ -1,6 +1,9 @@
+from math import floor
 RES = []
 SOBRA = 0
-VALOR = int(input())
+VALOR = float(input()) 
+
+
 Val = VALOR
 if VALOR % 100 == 0:
     RES.append(VALOR/100)
@@ -47,7 +50,7 @@ V10 = int(RES[3])
 V5 = int(RES[4])
 V2 = int(RES[5])
 V1 = int(RES[6])
-print(RES)
 
-# print(Val)
-# print("{} nota(s) de R$ 100,00\n{} nota(s) de R$ 50,00\n{} nota(s) de R$ 20,00\n{} nota(s) de R$ 10,00\n{} nota(s) de R$ 5,00\n{} nota(s) de R$ 2,00\n{} nota(s) de R$ 1,00".format(V100, V50, V20, V10, V5, V2, V1))
+
+print("{:.0f}".format(Val))
+print("{} nota(s) de R$ 100,00\n{} nota(s) de R$ 50,00\n{} nota(s) de R$ 20,00\n{} nota(s) de R$ 10,00\n{} nota(s) de R$ 5,00\n{} nota(s) de R$ 2,00\n{} nota(s) de R$ 1,00".format(V100, V50, V20, V10, V5, V2, V1))
