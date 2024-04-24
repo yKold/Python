@@ -12,3 +12,10 @@
 # for x in npcs:
 #     print(x["name"]) // procura o "name"
 
+
+x = 13
+y = 56
+tam = y - x
+val = []
+for i in range(tam-1):
+    val.append(x + (i+1))
