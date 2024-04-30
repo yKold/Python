@@ -13,9 +13,25 @@
 #     print(x["name"]) // procura o "name"
 
 
-x = 13
-y = 56
+x = 0
+y = 100
 tam = y - x
 val = []
+teste = []
+
+
 for i in range(tam-1):
     val.append(x + (i+1))
+for i in val:
+    o = i
+    i = str(i)
+    if o > 9 and o <= 99:
+        a = i[:1]
+        b = i[1:2]
+        if a != b :
+            print(i)
+            teste.append(i)
+    
+        
+print(teste)
+
