@@ -31,9 +31,13 @@ def entrarValores(event):
 
 def calc():
     global todoValores
-    res = eval(todoValores)
-    valorTexto.set(res)
-    todoValores = str(res)
+    try:
+        res = eval(todoValores)
+        valorTexto.set(res)
+        todoValores = str(res)
+    except ZeroDivisionError:
+        valorTexto.set("Cannot divide by 0")
+        todoValores = " "
 
 def limpar():
     global todoValores
@@ -105,11 +109,8 @@ b51.place(x=0, y=200)
 b52 = Button(frame_corpo,  command=lambda:entrarValores("."),text=".", width=5, height=2, bg=cor4, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 b52.place(x=118, y=200)
 
-b53 = Button(frame_corpo,  command=calc,text="=", width=5, height=2, bg=cor5, fg=cor2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+b53 = Button(frame_corpo,  command=calc, text="=", width=5, height=2, bg=cor5, fg=cor2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 b53.place(x=177, y=200)
-
-
-
 
 janela.mainloop()
  
