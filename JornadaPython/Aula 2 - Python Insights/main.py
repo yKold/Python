@@ -7,5 +7,6 @@ tabela = tabela.dropna()
 
 # print(tabela["cancelou"].value_counts(normalize=True))
 
-grafico = px.histogram(tabela, x="duracao_contrato")
-grafico.show()
+for coluna in tabela.columns:
+    grafico = px.histogram(tabela, x=coluna, color="cancelou")
+    grafico.show()
