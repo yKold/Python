@@ -108,4 +108,4 @@ def CriarMonstroAleatorio(nivel):
 
 # Exemplo de uso
 monstro_aleatorio = CriarMonstroAleatorio(5)
-print(monstro_aleatorio)
+print(monstro_aleatorio["vida"])
