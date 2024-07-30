@@ -36,4 +36,4 @@ while x != 0:
     for i in range(x):
         linha_formatada = " ".join(f"{Matriz[i][j]:{largura_campo}d}" for j in range(x))
         print(linha_formatada)
-
+    print()
