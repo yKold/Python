@@ -1,3 +1,4 @@
+#teste 1
 # N = int(input())
 
 # #   pegar valores e juntar o X e Y para tornar 1 só
@@ -53,18 +54,32 @@
 
 
 
+#teste 2
+# N = int(input())
 
+# for _ in range(N):
+#     Ax, Ay, Bx, By, Cx, Cy, Dx, Dy, Rx, Ry = map(int, input().split())
+
+#     min_x = min(Ax, Bx, Cx, Dx)
+#     max_x = max(Ax, Bx, Cx, Dx)
+#     min_y = min(Ay, By, Cy, Dy)
+#     max_y = max(Ay, By, Cy, Dy)
+
+#     if min_x <= Rx <= max_x and min_y <= Ry <= max_y:
+#         print("1")
+#     else:
+#         print("0")
+
+
+
+
+
+#teste 3
 N = int(input())
 
 for _ in range(N):
-    Ax, Ay, Bx, By, Cx, Cy, Dx, Dy, Rx, Ry = map(int, input().split())
+    Ax, Ay, Bx, By, Cx, Cy, Dx, Dy, Rx, Ry = [
+        int(x) for x in input().strip().split(' ')]
 
-    min_x = min(Ax, Bx, Cx, Dx)
-    max_x = max(Ax, Bx, Cx, Dx)
-    min_y = min(Ay, By, Cy, Dy)
-    max_y = max(Ay, By, Cy, Dy)
-
-    if min_x <= Rx <= max_x and min_y <= Ry <= max_y:
-        print("1")
-    else:
-        print("0")
+    print(1 if Ax <= Rx <= Bx and Dx <= Rx <=
+          Cx and Ay <= Ry <= Dy and By <= Ry <= Cy else 0)
