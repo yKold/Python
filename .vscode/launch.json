@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Harya/Documents/GitHub/Python/UFV",
-      "program": "c:/Users/Harya/Documents/GitHub/Python/UFV/build/Debug/outDebug",
+      "cwd": "c:/Users/Gabriel yKold/Documents/GitHub/Python/UFV",
+      "program": "c:/Users/Gabriel yKold/Documents/GitHub/Python/UFV/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
