@@ -2,20 +2,16 @@
 // Utilizando a variável ponteiro criada, preencha cada posição do vetor com o caractere (char)
 // correspondente à sua posição (‘0’, ‘1’, ‘2’, ..., ‘9’)
 
-#include <stdio.h>
 #include <stdlib.h>
 
 int main(){
-    int *ponteiro;
-    ponteiro = malloc(10 * sizeof(int));
-    
-    for (int i = 0; i < 10; i++)
-    {
-        ponteiro[i] = i;
+    char *vetor;
+    vetor = malloc(10 * sizeof(char));
+
+    for(int i = 0; i < 10; i++){
+        vetor[i] = '0' + i;
     }
-    for (int i = 0; i < 10; i++)
-    {   
-        printf("%d\n", ponteiro[i]);
-    }
-    
+    free(vetor);
+    return 0;
 }
+
