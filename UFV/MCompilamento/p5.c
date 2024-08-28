@@ -6,12 +6,12 @@
 
 int main(){
     int N;
-    scanf("%d", N);
+    scanf("%d", &N);
 
-    int *ponteiro = malloc( N * sizeof(int));
+    int *ponteiro = (int*)malloc( N * sizeof(int));
     for (int i = 0; i < N; i++)
     {
-        ponteiro[i] = 0;
+        *(ponteiro+1) = 0;
     }
      
     return 0;
