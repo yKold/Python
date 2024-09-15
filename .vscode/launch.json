@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Gabriel yKold/Documents/GitHub/Python/UFV/MCompilamento",
-      "program": "c:/Users/Gabriel yKold/Documents/GitHub/Python/UFV/MCompilamento/build/Debug/outDebug",
+      "cwd": "c:/Users/Harya/Documents/GitHub/Python/UFV/MCompilamento",
+      "program": "c:/Users/Harya/Documents/GitHub/Python/UFV/MCompilamento/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

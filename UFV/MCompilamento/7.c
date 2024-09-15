@@ -14,3 +14,28 @@ int pot(int x, int y){
     return res;
 }
 
+
+int Funcao(int a, int b){
+    if (b == 1)
+    {
+        return a;
+    }
+    else{
+        return a * Funcao(a, b-1);
+    }
+}
+
+int Fatorial(int a){
+    if(a == 1){
+        return 1;
+    }
+    else{
+        return a * Fatorial(a-1);
+    }
+}
+
+int main(){
+    printf("%d\n", Funcao(2,3));
+    printf("%d", Fatorial(5));
+    return 0;
+}
